@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>浮动</title>
+	</head>
+	<body>
+		<style type="text/css">
+			* {
+				margin: 0;
+				border: 0;
+				padding: 0;
+			}
+
+			.box1 {
+				width: 100%;
+				height: 160px;
+				background: gray;
+			}
+
+			.box1_01 {
+				width: 270px;
+				height: 40px;
+				float: left;
+			
+			}
+			.box1_02 {
+				width: 49px;
+				height: 40px;
+				float: right;
+			
+			}
+
+			.zc {
+				
+				width: 60px;
+				height: 35px;
+				margin: 10px;
+				border: 1px solid;
+				border-color: snow;
+				border-radius: 8px;
+				-moz-border-radius: 5px;
+				float: left;
+			}
+			.zc_01
+			{
+				position: absolute;
+				top: 70px;
+				left: 1680px;
+				width: 170px;
+				height: 50px;
+			}
+
+			.box1_01b {
+				width: 55px;
+				height: 33px;
+				float: right;
+				border-radius: 18px;
+				-moz-border-radius: 5px;
+			}
+
+			.box2 {
+				position: absolute;
+				top: 60px;
+				left: 250px;
+				width: 100%;
+				height: 38px;
+				background-color: rgba(200, 200, 200, 0.055);
+			}
+
+			.box2_t {
+				width: 1300px;
+				height: 40px;
+				float: left;
+
+			}
+
+			.box2_01 {
+				width: 140px;
+				height: 32px;
+
+				display: inline-block;
+			}
+
+			a:link,
+			a:visited {
+				text-decoration: none;
+				color: snow;
+				float: center;
+				font-size: 25px;
+			}
+
+			.box3 {
+				width: 1800px;
+				height: 400px;
+
+			}
+
+			.box3_01 {
+				width: 280px;
+				height: 380px;
+				margin-top: 25px;
+				margin-left: 16px;
+				border: 1px solid;
+				border-color: black;
+				border-radius: 18px;
+				-moz-border-radius: 5px;
+				display: inline-block;
+
+			}
+
+
+
+
+			
+
+			.sbox-p {
+				width: 100%;
+				overflow: hidden;
+			}
+
+			.sbox {
+				width: 300%;
+				height: 100%;
+				
+				overflow: hidden;
+				position: relative;
+			}
+
+			.sbox1 {
+				width: 33.3333%;
+				height: 1000px;
+				float: left;
+				animation: two 18s infinite;
+				
+			}
+			
+			.h{
+				width: 100%;
+				height: 10px;			
+				background: grey;			
+							}
+
+			.tbox1 {
+				width: 100%;
+				height: 980px;
+				
+			}
+
+			@keyframes two {
+				0% {
+					transform: translateX(0);
+				}
+
+				20% {
+					transform: translateX(0);
+				}
+
+				40% {
+					transform: translateX(-99.95%);
+				}
+
+				55% {
+					transform: translateX(-99.95%);
+				}
+
+				77% {
+					transform: translateX(-199.95%);
+					);
+				}
+
+				99% {
+					transform: translateX(-199.95%);
+					);
+				}
+			}
+			
+			.logo{
+				position: absolute;
+				top: 70px;
+				left: 90px;
+				width: 91px;
+				height: 91px;
+			}
+			.ss{
+				position: absolute;
+				top: 140px;
+				left: 175px;
+				width: 320px;
+				height: 42px;
+				border: 1px solid;				
+				border-color: snow;				
+				border-radius: 8px;			
+				-moz-border-radius: 5px;		
+				float: left;
+			}
+			a:hover {
+				color: grey;
+			}
+		</style>
+
+		<!-- <div class="box1">
+			<img src="IMG/标题.png" style="margin-top: 40px;">
+			
+			
+		</div> -->
+
+		<!-- <div class="tbox"></div> -->
+               
+			   
+		<div class="sbox-p">
+			<div class="sbox">
+				<div class="sbox1" style="background-image: url(IMG/图片06.jpg);"><p style="margin-top: 650px;margin-left: 1200px;font-size: 50px;"><em>让心去旅行！</em></p></div>
+				<div class="sbox1" style="background-image: url(IMG/633.jpg);"></div>
+		        <div class="sbox1" style="background-image:url(IMG/751.jpg);"></div>
+				
+				<div class="box2">
+					<div class="box2_t">
+						<div class="box2_01"><a href="#/" ;><em>首页</em></a></div>
+						<div class="box2_01"><a href="#/" ;><em>最新</em></a></div>
+						<div class="box2_01"><a href="#/" ;><em>摄影</em></a></div>
+						<div class="box2_01"><a href="#/" ;><em>人文艺术</em></a></div>
+						<div class="box2_01"><a href="#/" ;>&nbsp;&nbsp;<em>建筑风景</em></a></div>
+						<div class="box2_01"><a href="#/" ;>&nbsp;&nbsp;&nbsp;<em>动漫</em></a></div>
+						<div class="box2_01"><a href="#/" ;><em>运动/旅行</em></a></div>
+						<div class="box2_01"><a href="#/" ;>&nbsp;&nbsp;&nbsp;<em>美食/动物</em></a></div>
+					</div>
+				</div>	
+				<div class="zc_01">
+				
+               	<div class="zc"><a href="#">&nbsp;注册</a></div>
+				<div class="zc"><a href="#">&nbsp;登录</a></div>
+				</div>
+			<div class="logo">
+				<img src="IMG/logo.png" style="width: 90px;height: 90px;">
+			</div>
+                <div class="ss">
+                	<div class="box1_01">
+                		<form style="align:content" ; action="/demo/demo_form.asp">
+                			<input type="text" name="账号" style="width: 270px;height:40px;background-color: rgba(200, 200, 200, 0.020);font-size: 23px;">
+							</form>
+					</div>
+					<div class="box1_02">
+						<form style="align:content" ; action="/demo/demo_form.asp">
+                			<input type="button" name="账号" value="|搜索|" style="width: 45px;height:39px;background-color: rgba(200, 200, 200, 0.020);">
+                		    </form>
+					</div>
+							
+                	
+                </div>
+			</div>
+		</div>
+	<div class="h"></div>
+		<div class="tbox1">
+			
+		</div>
+		
+	</body>
+</html>
